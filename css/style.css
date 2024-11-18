@@ -1,13 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('global.css');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3.2rem;
+    background-color: #F5F5F5;
 }
 
-:root {
-    font-size: 62%; /* 10px */
+.logo {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
 }
 
-body {
-    font-size: 1.6rem;
+.logo > img {
+    height: 2.6rem;
+}
+
+.logo > span {
+    font-weight: bold;
+    color: #EF5F4C;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1.6rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu li:hover, footer .termos span:hover {
+    color: #EF5F4C;
+    cursor: pointer;
+} 
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+.menu-profile {
+    height: 4rem;
+    width: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem;
+    background-color: #F5F5F5;
+}
+
+.card {
+    display: flex;
+    gap: 3.2rem;
+}
+
+h1 {
+    color: #313131;
+    font-size: 3.2rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 37rem;
+}
+
+.card-info p {
+    font-size: 1.4rem;
+    line-height: 170%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 28rem;
+}
+
+.profile-info span {
+    display: flex;
+    gap: .8rem;
+    font-size: 1.4rem;
+}
+
+.galeria {
+    display: flex;
+    padding: 2.4rem 3.2rem;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 40rem;
+    height: 40rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 2.4rem 3.2rem;
+}
+
+footer .termos {
+    display: flex;
+    gap: 1.6rem;
 }
